@@ -1,0 +1,8 @@
+{"question": "how do I fix VPN error 1723?", "relevant_ids": ["vpn-access:0"]}
+{"question": "which port does the VPN need open?", "relevant_ids": ["vpn-access:0"]}
+{"question": "how do I get connected to the company network remotely?", "relevant_ids": ["vpn-access:0"]}
+{"question": "what should I focus on in my first week as a new hire?", "relevant_ids": ["onboarding:0"]}
+{"question": "how much can I spend on food while traveling?", "relevant_ids": ["expense-policy:0"]}
+{"question": "what is the reimbursement limit for meals?", "relevant_ids": ["expense-policy:0"]}
+{"question": "how quickly must on-call acknowledge an alert?", "relevant_ids": ["incident-response:0"]}
+{"question": "what do we do after an outage is resolved?", "relevant_ids": ["incident-response:0"]}

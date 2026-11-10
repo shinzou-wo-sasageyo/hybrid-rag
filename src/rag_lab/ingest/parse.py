@@ -26,7 +26,7 @@ def load_corpus(corpus_dir: str) -> list[Document]:
     """Load every .txt / .md file under corpus_dir as one Document."""
     docs: list[Document] = []
     for path in sorted(Path(corpus_dir).rglob("*")):
-        if path.suffix.lower() not in {".txt", ".md"}:
+        if path.suffix.lower() not in {".txt", ".md", ".rst"}:
             continue
         text = path.read_text(encoding="utf-8", errors="ignore").strip()
         if not text:

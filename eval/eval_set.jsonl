@@ -1,8 +1,30 @@
-{"question": "how do I fix VPN error 1723?", "relevant_ids": ["vpn-access:0"]}
-{"question": "which port does the VPN need open?", "relevant_ids": ["vpn-access:0"]}
-{"question": "how do I get connected to the company network remotely?", "relevant_ids": ["vpn-access:0"]}
-{"question": "what should I focus on in my first week as a new hire?", "relevant_ids": ["onboarding:0"]}
-{"question": "how much can I spend on food while traveling?", "relevant_ids": ["expense-policy:0"]}
-{"question": "what is the reimbursement limit for meals?", "relevant_ids": ["expense-policy:0"]}
-{"question": "how quickly must on-call acknowledge an alert?", "relevant_ids": ["incident-response:0"]}
-{"question": "what do we do after an outage is resolved?", "relevant_ids": ["incident-response:0"]}
+{"question": "how many spaces should I use for indentation?", "relevant_docs": ["pep-0008"]}
+{"question": "what is the maximum line length recommended in PEP 8?", "relevant_docs": ["pep-0008"]}
+{"question": "naming conventions for classes and functions", "relevant_docs": ["pep-0008"]}
+{"question": "what does the zen of python say?", "relevant_docs": ["pep-0020"]}
+{"question": "how do I add type hints to a function?", "relevant_docs": ["pep-0484"]}
+{"question": "what is PEP 484 about?", "relevant_docs": ["pep-0484"]}
+{"question": "how do f-strings work?", "relevant_docs": ["pep-0498"]}
+{"question": "formatted string literals", "relevant_docs": ["pep-0498"]}
+{"question": "what is the walrus operator?", "relevant_docs": ["pep-0572"]}
+{"question": "assignment expressions in python", "relevant_docs": ["pep-0572"]}
+{"question": "how do I use the match statement?", "relevant_docs": ["pep-0634"]}
+{"question": "structural pattern matching", "relevant_docs": ["pep-0634", "pep-0636"]}
+{"question": "what are dataclasses?", "relevant_docs": ["pep-0557"]}
+{"question": "how do I write async functions?", "relevant_docs": ["pep-0492"]}
+{"question": "async and await coroutine syntax", "relevant_docs": ["pep-0492"]}
+{"question": "what does yield from do?", "relevant_docs": ["pep-0380"]}
+{"question": "how do decorators work?", "relevant_docs": ["pep-0318"]}
+{"question": "what is the with statement and context managers?", "relevant_docs": ["pep-0343"]}
+{"question": "how do I create a virtual environment?", "relevant_docs": ["pep-0405"]}
+{"question": "build system configuration in pyproject.toml", "relevant_docs": ["pep-0518"]}
+{"question": "project metadata in pyproject.toml", "relevant_docs": ["pep-0621"]}
+{"question": "how are version identifiers specified?", "relevant_docs": ["pep-0440"]}
+{"question": "union types with the pipe operator", "relevant_docs": ["pep-0604"]}
+{"question": "X | Y type syntax", "relevant_docs": ["pep-0604"]}
+{"question": "type parameter syntax for generics", "relevant_docs": ["pep-0695"]}
+{"question": "removing the GIL / free threading", "relevant_docs": ["pep-0703"]}
+{"question": "docstring conventions", "relevant_docs": ["pep-0257"]}
+{"question": "generator expressions", "relevant_docs": ["pep-0289"]}
+{"question": "how do I declare source file encoding?", "relevant_docs": ["pep-0263"]}
+{"question": "variable annotations syntax", "relevant_docs": ["pep-0526"]}

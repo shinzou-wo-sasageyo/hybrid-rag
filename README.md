@@ -14,8 +14,9 @@ orphaned-chunk correctness, evaluation as a regression gate — are the point.
 
 ## The result that matters
 
-Dense vs. sparse vs. hybrid retrieval on a labeled eval set, from my own harness
-(`python -m rag_lab.eval.harness`). Run it and paste the table here:
+Dense vs. sparse vs. hybrid retrieval over **27 Python PEPs**, scored on a
+hand-labeled set of 30 queries (document-level recall@k / MRR) by my own harness
+(`make eval`). Run it and paste the table here:
 
 | config | recall@5 | precision@5 | MRR |
 |--------|----------|-------------|-----|
@@ -23,10 +24,12 @@ Dense vs. sparse vs. hybrid retrieval on a labeled eval set, from my own harness
 | sparse | _run it_ | _run it_    | _run it_ |
 | hybrid | _run it_ | _run it_    | _run it_ |
 
-The expected story: dense wins on paraphrased questions, sparse wins on
-exact-term ones (error codes, port numbers), and **hybrid beats both** because
-they fail on different queries. That's the whole argument for hybrid retrieval,
-shown rather than asserted.
+The expected story: dense wins on paraphrased questions ("how do I create a
+virtual environment?"), sparse wins on exact-term ones ("PEP 484", "walrus
+operator", "yield from"), and **hybrid beats both** because they fail on
+different queries. That's the whole argument for hybrid retrieval, shown rather
+than asserted. PEPs are a good corpus for this precisely because they mix prose
+with hard identifiers that reward lexical search.
 
 ## Architecture
 
@@ -50,12 +53,13 @@ shown rather than asserted.
 cp .env.example .env
 pip install -e .            # local embedding model, no API key needed
 make up                     # postgres + pgvector via docker
-make ingest                 # index sample_corpus/
+make fetch-peps             # download the Python PEPs corpus (needs network)
+make ingest                 # index data/corpus/
 make eval                   # print the dense/sparse/hybrid comparison table
 make serve                  # POST /query
 ```
 
-Try the sync correctness demo: edit `sample_corpus/vpn-access.md`, re-run
+Try the sync correctness demo: edit any file in `data/corpus/`, re-run
 `make ingest`, and watch the reconcile report inserted/updated/deleted counts.
 
 ## Layout
